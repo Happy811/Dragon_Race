@@ -151,7 +151,7 @@
             // 
             // DragonNumber
             // 
-            this.DragonNumber.Location = new System.Drawing.Point(515, 135);
+            this.DragonNumber.Location = new System.Drawing.Point(490, 131);
             this.DragonNumber.Margin = new System.Windows.Forms.Padding(4);
             this.DragonNumber.Maximum = new decimal(new int[] {
             4,
@@ -175,7 +175,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(328, 137);
+            this.label2.Location = new System.Drawing.Point(353, 94);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 18);
@@ -185,7 +185,7 @@
             // 
             // BettingAmount
             // 
-            this.BettingAmount.Location = new System.Drawing.Point(502, 62);
+            this.BettingAmount.Location = new System.Drawing.Point(490, 59);
             this.BettingAmount.Margin = new System.Windows.Forms.Padding(4);
             this.BettingAmount.Maximum = new decimal(new int[] {
             100000,
@@ -266,7 +266,7 @@
             // 
             this.MaximumBet.AutoSize = true;
             this.MaximumBet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaximumBet.Location = new System.Drawing.Point(327, 63);
+            this.MaximumBet.Location = new System.Drawing.Point(168, 48);
             this.MaximumBet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MaximumBet.Name = "MaximumBet";
             this.MaximumBet.Size = new System.Drawing.Size(120, 20);

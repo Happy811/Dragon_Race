@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OX_Race
+namespace Dragon_Race
 {
     class Dragon_test
     {

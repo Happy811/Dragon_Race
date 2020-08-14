@@ -20,16 +20,16 @@ namespace Dragon_Race
         {
 
             Dragon.StartingPosition1 = Dragon1.Right - Racetrack.Left;
-            Dragon.RacetrackLength1 = Racetrack.Size.Width - 70; //connect the length of race - upto ending line
+            Dragon.RacetrackLength1 = Racetrack.Size.Width - 70; //fixing length of race - till finish line
 
             Dragons[0] = new Dragon() { DragonPictureBox = Dragon1 };
             Dragons[1] = new Dragon() { DragonPictureBox = Dragon2 };
             Dragons[2] = new Dragon() { DragonPictureBox = Dragon3 };
             Dragons[3] = new Dragon() { DragonPictureBox = Dragon4 };
 
-            Bettors[0] = PlayerFactory.GetBettor("Happy", MaximumBet, HappyBet); //obtaing  Happy object from factory class
-            Bettors[1] = PlayerFactory.GetBettor("Suman", MaximumBet, SumanBet); //obtaing Suman object from factory class
-            Bettors[2] = PlayerFactory.GetBettor("Nav", MaximumBet, NavBet); //obtaing Nav object from factory class
+            Bettors[0] = PlayerFactory.GetBettor("Happy", MaximumBet, HappyBet); //getting Happy object from factory class
+            Bettors[1] = PlayerFactory.GetBettor("Suman", MaximumBet, SumanBet); //getting Suman object from factory class
+            Bettors[2] = PlayerFactory.GetBettor("Nav", MaximumBet, NavBet); //getting Nav object from factory class
 
             Debug.WriteLine(Bettors[0].Title);
 
@@ -96,12 +96,12 @@ namespace Dragon_Race
                     {
                         winningDragon = i + 1;
                         NoWinner = false;
-                        MessageBox.Show("We have a defeater -  Dragon #" + winningDragon);
+                        MessageBox.Show("We have a winner -  Dragon #" + winningDragon);
                         foreach (Bettor bettor in Bettors)
                         {
                             if (bettor.gamble != null)
                             {
-                                bettor.Collect(winningDragon); //give double sum to all who have achieve or conclued betted sum
+                                bettor.Collect(winningDragon); //give double amount to all who've won or deduce betted amount
                                 bettor.gamble = null;
                                 bettor.UpdateLabels();
                             }
@@ -116,8 +116,8 @@ namespace Dragon_Race
             }
             if (Bettors[0].busted && Bettors[1].busted && Bettors[2].busted)
             {  //stop bettors from betting if they run out of cash
-                string message = "Do you want to play this game once more time?";
-                string title = "Game Finished!";
+                string message = "Do you want to Play Again?";
+                string title = "GAME OVER!";
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
                 DialogResult result = MessageBox.Show(message, title, buttons);
                 if (result == DialogResult.Yes)

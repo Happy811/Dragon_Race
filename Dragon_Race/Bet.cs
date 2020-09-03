@@ -17,7 +17,7 @@
             string description;
             if (Amount > 0)
             {
-                description = string.Format("{0} bets {1} on OX #{2}",
+                description = string.Format("{0} bets {1} on Dragon #{2}",
                     Bettor.Title, Amount, DragonNum);
             }
             else
